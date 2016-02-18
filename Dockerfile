@@ -6,7 +6,7 @@ RUN apt-get update &&\
     apt-get clean &&\
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-VOLUME ["/etc/varnish"]
+VOLUME ["/var/config"]
 
 EXPOSE 80
 

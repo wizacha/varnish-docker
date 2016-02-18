@@ -1,5 +1,5 @@
 #!/bin/bash
 
-varnishd -f /etc/varnish/default.vcl -s malloc,256M -a :80
+varnishd -f /var/config/varnish/default.vcl -s malloc,256M -a :80
 sleep 1
 varnishlog -q "RespStatus >= 500 or BerespStatus >= 500"
